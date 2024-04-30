@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firstproject": {
+    "fogbankFamily": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firstproject",
+            "outputPath": "dist/fogbank-family",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,9 +26,31 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/plugins/fontawesome/css/fontawesome.min.css",
+              "src/assets/plugins/fontawesome/css/all.min.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.min.css",
+              "src/assets/plugins/feather/feather.css",
+              "src/assets/plugins/slick/slick.css",
+              "src/assets/plugins/slick/slick-theme.css",
+              "src/assets/plugins/select2/css/select2.min.css",
+              "src/assets/plugins/swiper/css/swiper.min.css",
+              "src/assets/plugins/aos/aos.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.7.1.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/plugins/aos/aos.js",
+              "src/assets/js/jquery.waypoints.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/plugins/select2/js/select2.min.js",
+              "src/assets/plugins/slick/slick.js",
+              "src/assets/plugins/swiper/js/swiper.min.js",
+              "src/assets/js/script.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -61,10 +83,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "firstproject:build:production"
+              "browserTarget": "fogbankFamily:build:production"
             },
             "development": {
-              "browserTarget": "firstproject:build:development"
+              "browserTarget": "fogbankFamily:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firstproject:build"
+            "browserTarget": "fogbankFamily:build"
           }
         },
         "test": {
@@ -97,6 +119,6 @@
     }
   },
   "cli": {
-    "analytics": "d3e92a66-9701-4235-862c-63dd7ba8e7bc"
+    "analytics": "d1de8651-e82b-4143-9fc9-59f8c16870cc"
   }
 }
